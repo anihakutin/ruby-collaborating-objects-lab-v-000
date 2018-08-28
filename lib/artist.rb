@@ -6,15 +6,19 @@ class Artist
     self.name = name
     self.songs = [ ]
   end
+
   def add_song(song)
     self.songs << song
   end
-  def self.find_or_create_by_name
 
+  def self.find_or_create_by_name
+    
   end
+
   def save
     self.class.all << self
   end
+
   def self.all
     @@all
   end
