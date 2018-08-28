@@ -12,7 +12,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(artist)
-    
+    new_artist = self.new(artist) unless self.class.all.any? {|a| a == artist}
   end
 
   def save
