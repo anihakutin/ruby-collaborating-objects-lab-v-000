@@ -12,13 +12,14 @@ class Artist
     self.songs << song
   end
 
-  def self.find_or_create_by_name(artist)
-    new_artist = self.new(artist) unless self.all.any? {|a| a.name == artist}
-  end
   def save
     self.class.all << self
   end
 
+  def self.find_or_create_by_name(artist)
+    new_artist = self.new(artist) unless self.all.any? {|a| a.name == artist}
+  end
+  
   def self.all
     @@all
   end
