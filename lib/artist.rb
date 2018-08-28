@@ -9,6 +9,9 @@ class Artist
   def add_song(song)
     self.songs << song
   end
+  def self.find_or_create_by_name
+
+  end
   def save
     self.class.all << self
   end
