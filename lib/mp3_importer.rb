@@ -10,4 +10,8 @@ class MP3Importer
   files = Dir["#{path}/*.mp3"].map{|song| song.split("/").last}
   end
 
+  def import
+    
+  end
+
 end
