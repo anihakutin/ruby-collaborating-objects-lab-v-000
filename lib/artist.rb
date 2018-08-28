@@ -4,7 +4,7 @@ class Artist
   def initialize(name)
     self.name = name
   end
-  def add_song(songs)
-    self.songs << songs
+  def add_song(song)
+    self.songs << song
   end
 end
