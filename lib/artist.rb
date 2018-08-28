@@ -16,7 +16,7 @@ class Artist
     self.class.all << self
   end
   def print_songs
-    songs.each {|song| puts song}
+    songs.each {|song| puts song.name}
   end
   def self.find_or_create_by_name(artist)
     new_artist = self.new(artist) unless self.all.any? {|a| a.name == artist}
