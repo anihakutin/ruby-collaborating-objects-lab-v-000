@@ -10,6 +10,6 @@ class Artist
     self.songs << song
   end
   def save
-    self.class.songs
+    self.class.songs << self
   end
 end
