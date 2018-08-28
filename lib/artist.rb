@@ -22,7 +22,7 @@ class Artist
     new_artist = self.new(artist) unless self.all.any? {|a| a.name == artist}
   end
 
-  def self.all
+  def self.songs
     @@all
   end
 end
