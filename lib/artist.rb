@@ -13,7 +13,7 @@ class Artist
   end
 
   def save
-    self.class.all << self
+    self.class.songs << self
   end
   def print_songs
     songs.each {|song| puts song.name}
